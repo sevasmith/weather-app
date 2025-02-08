@@ -49,7 +49,7 @@ A simple and minimalistic weather app built with React. The app displays the tem
 ![Desktop Version](public/assets/desktop-screenshot.png)
 
 ### Mobile Version  
-<img src="public/assets/mobile-screenshot.png" alt="Mobile Version" width="500"/>
+<img src="public/assets/mobile-screenshot.png" alt="Mobile Version" width="300"/>
 
 ## License
 
