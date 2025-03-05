@@ -9,12 +9,20 @@ export default function App() {
 
   const [search, setSearch] = useState("");
   const [weather, setWeather] = useState({});
+  const [errorText, setErrorText] = useState("");
 
   function handleSubmit() {
     fetch(`${api.base}/weather?q=${search}&units=metric&APPID=${api.key}`)
       .then((res) => res.json())
       .then((result) => {
-        setWeather(result);
+        if (result.cod === "404") {
+          setErrorText("No city found");
+          setWeather({})
+        } else {
+          setWeather(result);
+          setErrorText("");
+        }
+        setSearch("");
       });
   }
 
@@ -73,6 +81,7 @@ export default function App() {
       ) : (
         ""
       )}
+      <div className="error-text">{errorText}</div>
     </div>
   );
 }

@@ -21,7 +21,7 @@ A simple and minimalistic weather app built with React. The app displays the tem
 
 1. Clone the repository to your local machine:
    ```sh
-   git clone https://github.com/your-username/weather-app.git
+   git clone https://github.com/sevasmith/weather-app.git
    ```
 2. Navigate to the project directory:
    ```sh
