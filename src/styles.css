@@ -20,7 +20,7 @@ body {
 
 body::after {
   content: "";
-  position: fixed;
+  position: absolute;
   z-index: -1;
   top: 0;
   bottom: 0;
