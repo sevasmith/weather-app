@@ -111,7 +111,7 @@ span {
   }
 
   input {
-    width: 160px;
+    width: 30vw;
   }
 
   .weather-detail {
@@ -119,7 +119,7 @@ span {
   }
 
   h1 {
-    font-size: 34px;
+    font-size: 32px;
   }
 
   p,
